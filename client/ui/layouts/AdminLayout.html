@@ -1,0 +1,17 @@
+<template name="AdminLayout">
+    {{> Template.dynamic template = topbar }}
+    {{> Template.dynamic template = header }}
+    <section class="vn-care content">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-md-3 sidebar">
+                    {{> Template.dynamic template = leftSidebar}}
+                </div>
+                <div class="col-sm-8 col-md-9">
+                    {{> Template.dynamic template = page}}
+                </div>
+            </div>
+        </div>
+    </section>
+    {{> Template.dynamic template = footer }}
+</template>

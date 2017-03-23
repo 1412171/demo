@@ -1,0 +1,21 @@
+<template name="TopBar">
+    <section class="vn-care content top-bar">
+        <div class="col-md-3 pull-right">
+            {{#if currentUser }}
+                <div class="dropdown pull-right">
+                    <a href="#" class="dropdown-toggle username" data-toggle="dropdown">abc<b
+                            class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#" class="logout">Logout</a></li>
+                    </ul>
+                </div>
+            {{else}}
+                <div class="pull-right divider"> &nbsp; </div>
+                <a href="{{pathFor 'Login'}}" class="btn btn-sm btn-primary pull-right">Login</a>
+                <div class="pull-right divider"> &nbsp; </div>
+                <a href="{{pathFor 'SignUp'}}" class="btn btn-sm btn-success pull-right">Sign up</a>
+            {{/if}}
+        </div>
+    </section>
+</template>
