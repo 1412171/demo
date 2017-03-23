@@ -66,6 +66,7 @@ msavin:jetsetter
 msavin:mongol
 
 
+
 mpowaga:autoform-summernote
 reywood:publish-composite
 
@@ -84,3 +85,4 @@ ddp-rate-limiter@1.0.7
 #Capcha
 altapp:recaptcha
 ejson@1.0.13
+natestrauser:animate-css
