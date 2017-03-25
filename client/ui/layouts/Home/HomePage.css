@@ -1,0 +1,16 @@
+#carousel-example-generic {
+    overflow: hidden;
+    margin: 0 auto;
+//max-width: 320px;
+}
+#carousel-example-generic .item {
+//height: 200px;
+}
+#carousel-example-generic img {
+//max-height: 100%;
+}
+
+
+.slick-prev:before, .slick-next:before {
+    color:    silver;
+}

@@ -1,3 +1,119 @@
 <template name="HomePage">
-    Group9
+    <div class="container">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            </ol>
+
+            <div class="carousel-inner">
+
+                <div class="item active">
+                    <img src="images/main-slider2.jpg" alt="Бобслей">
+                    <div class="carousel-caption">
+                        ...
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/main-slider1.jpg" alt="Биатлон">
+                    <div class="carousel-caption">
+                        ...
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/main-slider4.jpg" alt="Коньки">
+                    <div class="carousel-caption">
+                        ...
+                    </div>
+                </div>
+            </div>
+
+
+            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </div>
+
+    <div class="container custom-advantage">
+        <div id="advantages">
+            <div class="container">
+                <div class="same-height-row">
+                    <div class="col-sm-4">
+                        <div class="box same-height clickable">
+                            <div class="icon"><i class="fa fa-heart"></i>
+                            </div>
+
+                            <h3><a href="#">We love our customers</a></h3>
+                            <p>We are known to provide best possible service ever</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="box same-height clickable">
+                            <div class="icon"><i class="fa fa-tags"></i>
+                            </div>
+
+                            <h3><a href="#">Best prices</a></h3>
+                            <p>You can check that the height of the boxes adjust when longer text like this one is used in one of them.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="box same-height clickable">
+                            <div class="icon"><i class="fa fa-thumbs-up"></i>
+                            </div>
+
+                            <h3><a href="#">100% satisfaction guaranteed</a></h3>
+                            <p>Free returns on everything for 3 months.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="hot">
+
+        <div class="box">
+            <div class="container">
+                <div class="col-md-12">
+                    <h2>Hot this week</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3">
+                    vdsvd
+                </div>
+                <div class="col-md- col-sm-7">
+                    {{> carousel}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+</template>
+
+<template name="carousel">
+    <div class="container">
+        <div id="carousel">
+            <div><img src="/images/product1.jpg" width="250px" height="250px" /></div>
+            <div><img src="/images/product1_2.jpg" width="250px" height="250px" /></div>
+            <div><img src="/images/product2.jpg" width="250px" height="250px"/></div>
+            <div><img src="/images/product1.jpg" width="250px" height="250px"/></div>
+            <div><img src="/images/product1_2.jpg" width="250px" height="250px"/></div>
+            <div><img src="/images/product2.jpg" width="250px" height="250px"/></div>
+        </div>
+    </div>
+
 </template>

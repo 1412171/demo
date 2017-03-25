@@ -1,5 +1,5 @@
 * {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -83,7 +83,7 @@ header.vn-care nav {
 footer {
     padding: 10px;
     background: #2e2e2e;
-    color: #aaaaaa;
+    color: #2e2e2e;
 }
 
 .footer-fix {

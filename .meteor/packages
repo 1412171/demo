@@ -47,6 +47,7 @@ aldeed:autoform-select2
 barbatus:stars-rating
 natestrauser:select2
 jesperwe:bootstrap-select
+natestrauser:animate-css
 
 juliancwirko:s-alert
 juliancwirko:s-alert-slide
@@ -85,4 +86,6 @@ ddp-rate-limiter@1.0.7
 #Capcha
 altapp:recaptcha
 ejson@1.0.13
-natestrauser:animate-css
+
+#slideshow
+udondan:slick

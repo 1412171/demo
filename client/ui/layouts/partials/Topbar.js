@@ -9,7 +9,7 @@ Template.TopBar.onDestroyed(function () {});
 
 Template.TopBar.helpers({
     isLogin: function() {
-        return false;
+        return true;
     }
 });
 

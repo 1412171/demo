@@ -4,7 +4,7 @@ import {BlazeLayout} from 'meteor/kadira:blaze-layout';
 const UserLayout = {
     topbar: "TopBar",
     header: "Header",
-    // footer: "Footer"
+    footer: "Footer"
 };
 
 FlowRouter.notFound = {

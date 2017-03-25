@@ -3,3 +3,11 @@
 .topbar-fix-dropdown{
     color: #2e2e2e !important;
 }
+.custom-advantage{
+    margin: 20px auto 0 auto;
+}
+@media screen and (min-width: 960px) {
+    .same-height{
+        height: 180px !important;
+    }
+}
