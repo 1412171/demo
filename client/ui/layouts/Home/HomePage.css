@@ -13,3 +13,13 @@
 .slick-prev:before, .slick-next:before {
     color:    silver;
 }
+.custom-line-product{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 30px 0 20px 0;
+}
+.custom-line-product a {
+    text-decoration: none;
+    color: white;
+}
+

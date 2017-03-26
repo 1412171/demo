@@ -98,10 +98,12 @@
 </template>
 
 <template name="_LineProduct">
-    <div class="row">
+    <div class="row custom-line-product" style="background-color: {{line.BgColor}}">
         <div class="col-md-3 col-sm-3">
             <h3>{{line.Name}}</h3>
-            <button class="btn btn-info"><a href="{{line.Link}}">View all product</a></button>
+            <button class="btn btn-info">
+                <a href="{{line.Link}}">View all product</a>
+            </button>
         </div>
         <div class="col-md-9 col-sm-9">
             {{> _Carousel top = line.Top5}}
@@ -118,5 +120,14 @@
 </template>
 
 <template name="_Product">
-    <div><img src="{{product.image}}" width="200px" height="200px" /></div>
+    <div class="container">
+        <div class="row">
+            <img src="{{product.image}}" width="200px" height="200px" />
+        </div>
+        <div class="row" style="padding: 10px 0 10px 50px;" >
+            <button  class="btn btn-sm btn-info"><li class="fa fa-cart-plus"></li> Add to cart</button>
+        </div>
+    </div>
+
+
 </template>

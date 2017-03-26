@@ -73,6 +73,7 @@ Template.HomePage.helpers({
             {
                 Name: "DECOR",
                 Link: "#",
+                BgColor: 'white',
                 Top5: [
                     {
                         image: '/images/product1.jpg',
@@ -100,6 +101,7 @@ Template.HomePage.helpers({
             {
                 Name: "LIGHT",
                 Link: "#",
+                BgColor: '#efefef',
                 Top5: [
                     {
                         image: '/images/product1.jpg',
@@ -123,7 +125,35 @@ Template.HomePage.helpers({
                     }
                 ]
 
-            }
+            },
+            {
+                Name: "NOTEBOOKS",
+                Link: "#",
+                BgColor: 'white',
+                Top5: [
+                    {
+                        image: '/images/product1.jpg',
+                        link: '#',
+                    },
+                    {
+                        image: '/images/product1.jpg',
+                        link: '#',
+                    },
+                    {
+                        image: '/images/product1.jpg',
+                        link: '#',
+                    },
+                    {
+                        image: '/images/product1.jpg',
+                        link: '#',
+                    },
+                    {
+                        image: '/images/product1.jpg',
+                        link: '#',
+                    }
+                ]
+
+            },
         ]
     }
 });
