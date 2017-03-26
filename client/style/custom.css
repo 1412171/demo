@@ -7,7 +7,7 @@
     margin: 20px auto 0 auto;
 }
 @media screen and (min-width: 960px) {
-    .same-height{
+    .advan-same-height{
         height: 180px !important;
     }
 }

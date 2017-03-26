@@ -47,7 +47,7 @@
             <div class="container">
                 <div class="same-height-row">
                     <div class="col-sm-4">
-                        <div class="box same-height clickable">
+                        <div class="box advan-same-height clickable">
                             <div class="icon"><i class="fa fa-heart"></i>
                             </div>
 
@@ -57,7 +57,7 @@
                     </div>
 
                     <div class="col-sm-4">
-                        <div class="box same-height clickable">
+                        <div class="box advan-same-height clickable">
                             <div class="icon"><i class="fa fa-tags"></i>
                             </div>
 
@@ -67,10 +67,9 @@
                     </div>
 
                     <div class="col-sm-4">
-                        <div class="box same-height clickable">
+                        <div class="box advan-same-height clickable">
                             <div class="icon"><i class="fa fa-thumbs-up"></i>
                             </div>
-
                             <h3><a href="#">100% satisfaction guaranteed</a></h3>
                             <p>Free returns on everything for 3 months.</p>
                         </div>
@@ -81,39 +80,43 @@
     </div>
 
     <div id="hot">
-
         <div class="box">
-            <div class="container">
-                <div class="col-md-12">
-                    <h2>Hot this week</h2>
+            <div class="container" style="background-color: white">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 style="margin-bottom: 0">PRODUCT</h2>
+                        <p style="color: #dd8bc1">----------------------------------------</p>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-3">
-                    vdsvd
-                </div>
-                <div class="col-md- col-sm-7">
-                    {{> carousel}}
-                </div>
+                {{#each line in getListProducts}}
+                    {{> _LineProduct line= line}}
+                {{/each}}
             </div>
         </div>
     </div>
-
 </template>
 
-<template name="carousel">
-    <div class="container">
-        <div id="carousel">
-            <div><img src="/images/product1.jpg" width="250px" height="250px" /></div>
-            <div><img src="/images/product1_2.jpg" width="250px" height="250px" /></div>
-            <div><img src="/images/product2.jpg" width="250px" height="250px"/></div>
-            <div><img src="/images/product1.jpg" width="250px" height="250px"/></div>
-            <div><img src="/images/product1_2.jpg" width="250px" height="250px"/></div>
-            <div><img src="/images/product2.jpg" width="250px" height="250px"/></div>
+<template name="_LineProduct">
+    <div class="row">
+        <div class="col-md-3 col-sm-3">
+            <h3>{{line.Name}}</h3>
+            <button class="btn btn-info"><a href="{{line.Link}}">View all product</a></button>
+        </div>
+        <div class="col-md-9 col-sm-9">
+            {{> _Carousel top = line.Top5}}
         </div>
     </div>
+</template>
 
+<template name="_Carousel">
+    <div id="carousel">
+        {{#each product in top}}
+            {{> _Product product = product}}
+        {{/each}}
+    </div>
+</template>
+
+<template name="_Product">
+    <div><img src="{{product.image}}" width="200px" height="200px" /></div>
 </template>
