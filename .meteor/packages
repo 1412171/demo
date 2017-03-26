@@ -87,3 +87,6 @@ ejson@1.0.13
 
 #slideshow
 udondan:slick
+
+#chart
+maazalik:highcharts

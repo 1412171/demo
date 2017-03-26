@@ -1,58 +1,155 @@
 <template name="Admin">
-    <div id="wrapper">
+    <div id="wrapper" class="toggled">
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
+            <ul class="sidebar-nav ">
                 <li class="sidebar-brand">
                     <a href="#">
-                        Start Bootstrap
+                        Hi Group 9!
                     </a>
+                </li>
+                <li  style="margin: auto">
+                    <img id="avatar-image" src="images/photo.jpg" class="avatar img-circle img-thumbnail"
+                         height="150" width="150" alt="avatar">
                 </li>
                 <li>
                     <a href="#">Dashboard</a>
                 </li>
                 <li>
-                    <a href="#">Shortcuts</a>
+                    <a href="#">Orders</a>
                 </li>
                 <li>
-                    <a href="#">Overview</a>
-                </li>
-                <li>
-                    <a href="#">Events</a>s
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Services</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#demo">Products <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="demo" class="collapse">
+                        <li>
+                            <a href="#">Deco</a>
+                        </li>
+                        <li>
+                            <a href="#">Notebook</a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </div>
-        <!-- /#sidebar-wrapper -->
 
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1>Simple Sidebar</h1>
-                        <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
-                        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
-                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+        <div class="container-fluid" style="padding: 0;">
+            <div id="top">
+                <ul class="menu">
+                    <li>
+                        <div class="dropdown">
+                            <a href="#" class="dropdown-toggle username" data-toggle="dropdown">
+                                Username
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="topbar-fix-dropdown" href="#">Profile</a></li>
+                                <li><a class="topbar-fix-dropdown logout" href="#">Logout</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li style="padding-right: 10px"><a href="/"><i class="fa fa-home"></i>Go Home</a></li>
+                </ul>
+            </div>
+
+            <div class="row" style="padding: 20px">
+                <div class="col-lg-4 col-md-4">
+                    <div class="panel panel-red">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-comments fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">26</div>
+                                    <div>New orders!</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="panel panel-green">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-tasks fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">12</div>
+                                    <div>Products</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="panel panel-yellow">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-shopping-cart fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">124$</div>
+                                    <div>Revenue</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- /#page-content-wrapper -->
 
+            <div class="row" style="padding: 20px">
+                <div class="col-md-6">
+                    <div id="container-column" style="height: 300px;"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Lastest orders
+                        </div>
+                        <div class="panel-body">
+                            <p>This is table</p>
+                            Implement in fulture. Use Tabular
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="padding: 20px">
+                <div class="col-md-12">
+                    <div class="panel panel-heading">
+                        <p style="font-weight: 600; font-size: 2em">My products (5)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="padding: 20px">
+                <div class="col-md-12">
+                    {{> _Carousel top = getListProducts.Top5}}
+                </div>
+            </div>
+        </div>
     </div>
-    <script>
-        $("#menu-toggle").click(function(e) {
-            e.preventDefault();
-            $("#wrapper").toggleClass("toggled");
-        });
-    </script>
 </template>

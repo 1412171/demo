@@ -2,22 +2,7 @@
     {{> Template.dynamic template = topbar }}
     {{> Template.dynamic template = header }}
 
-    {{#if hasSidebar}}
-        <section class="vn-care content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4 col-md-3 sidebar">
-                        {{> Template.dynamic template = leftSidebar}}
-                    </div>
-                    <div class="col-sm-8 col-md-9">
-                        {{> Template.dynamic template = page}}
-                    </div>
-                </div>
-            </div>
-        </section>
-    {{else}}
-        {{> Template.dynamic template = page}}
-    {{/if}}
+    {{> Template.dynamic template = page}}
 
     {{> Template.dynamic template = footer }}
     {{> Template.dynamic template = copyright }}
