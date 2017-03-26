@@ -24,12 +24,19 @@ FlowRouter.route('/', {
     }
 });
 
-FlowRouter.route('/Detail', {
+FlowRouter.route('/detail', {
     name: "Detail",
     action: function() {
         let curLayout = _.extend(UserLayout, {
             page: "Detail"
         });
         BlazeLayout.render("MainLayout", curLayout);
+    }
+});
+
+FlowRouter.route('/admin', {
+    name: "Admin",
+    action: function() {
+        BlazeLayout.render("Admin");
     }
 });
