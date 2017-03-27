@@ -5,7 +5,9 @@ const UserLayout = {
     topbar: "TopBar",
     header: "Header",
     footer: "Footer",
-    copyright: "Copyright"
+    copyright: "Copyright",
+    sidebar: "SideBar",
+    customersection: "CustomerSection"
 };
 
 FlowRouter.notFound = {
@@ -29,6 +31,66 @@ FlowRouter.route('/detail', {
     action: function() {
         let curLayout = _.extend(UserLayout, {
             page: "Detail"
+        });
+        BlazeLayout.render("MainLayout", curLayout);
+    }
+});
+
+FlowRouter.route('/orders', {
+    name: "Orders",
+    action: function() {
+        let curLayout = _.extend(UserLayout, {
+            page: "Orders"
+        });
+        BlazeLayout.render("MainLayout", curLayout);
+    }
+});
+
+FlowRouter.route('/orderhistory', {
+    name: "OrderHistory",
+    action: function() {
+        let curLayout = _.extend(UserLayout, {
+            page: "OrderHistory"
+        });
+        BlazeLayout.render("MainLayout", curLayout);
+    }
+});
+
+FlowRouter.route('/wishlist', {
+    name: "Wishlist",
+    action: function() {
+        let curLayout = _.extend(UserLayout, {
+            page: "Wishlist"
+        });
+        BlazeLayout.render("MainLayout", curLayout);
+    }
+});
+
+FlowRouter.route('/account', {
+    name: "Account",
+    action: function() {
+        let curLayout = _.extend(UserLayout, {
+            page: "Account"
+        });
+        BlazeLayout.render("MainLayout", curLayout);
+    }
+});
+
+FlowRouter.route('/register', {
+    name: "Register",
+    action: function() {
+        let curLayout = _.extend(UserLayout, {
+            page: "Register"
+        });
+        BlazeLayout.render("MainLayout", curLayout);
+    }
+});
+
+FlowRouter.route('/category', {
+    name: "Category",
+    action: function() {
+        let curLayout = _.extend(UserLayout, {
+            page: "Category"
         });
         BlazeLayout.render("MainLayout", curLayout);
     }

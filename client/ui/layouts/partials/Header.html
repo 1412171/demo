@@ -27,7 +27,7 @@
                 <div class="navbar-collapse collapse" id="navigation">
 
                     <ul class="nav navbar-nav navbar-left">
-                        <li class="active"><a href="/">Home</a>
+                        <li class="active"><a href={{pathFor 'HomePage'}}>Home</a>
                         </li>
                         <li class="dropdown yamm-fw">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Men <b class="caret"></b></a>
@@ -191,13 +191,9 @@
                                             <div class="col-sm-3">
                                                 <h5>Shop</h5>
                                                 <ul>
-                                                    <li><a href="#">Homepage</a>
+                                                    <li><a href={{pathFor 'HomePage'}}>Homepage</a>
                                                     </li>
-                                                    <li><a href="#">Category - sidebar left</a>
-                                                    </li>
-                                                    <li><a href="category-right.html">Category - sidebar right</a>
-                                                    </li>
-                                                    <li><a href="category-full.html">Category - full width</a>
+                                                    <li><a href={{pathFor 'Category'}}>Category</a>
                                                     </li>
                                                     <li><a href={{pathFor 'Detail'}}>Product detail</a>
                                                     </li>
@@ -206,15 +202,15 @@
                                             <div class="col-sm-3">
                                                 <h5>User</h5>
                                                 <ul>
-                                                    <li><a href="register.html">Register / login</a>
+                                                    <li><a href={{pathFor 'Register'}}>Register / login</a>
                                                     </li>
-                                                    <li><a href="customer-orders.html">Orders history</a>
+                                                    <li><a href={{pathFor 'Orders'}}>Orders history</a>
                                                     </li>
-                                                    <li><a href="customer-order.html">Order history detail</a>
+                                                    <li><a href={{pathFor 'OrderHistory'}}>Order history detail</a>
                                                     </li>
-                                                    <li><a href="customer-wishlist.html">Wishlist</a>
+                                                    <li><a href={{pathFor 'Wishlist'}}>Wishlist</a>
                                                     </li>
-                                                    <li><a href="customer-account.html">Customer account / change password</a>
+                                                    <li><a href={{pathFor 'Account'}}>Customer account / change password</a>
                                                     </li>
                                                 </ul>
                                             </div>
