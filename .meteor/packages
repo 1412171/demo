@@ -90,3 +90,6 @@ udondan:slick
 
 #chart
 maazalik:highcharts
+
+#google map
+dburles:google-maps

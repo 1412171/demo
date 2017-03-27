@@ -40,3 +40,14 @@ FlowRouter.route('/admin', {
         BlazeLayout.render("Admin");
     }
 });
+
+
+FlowRouter.route('/contact', {
+    name: "Contact",
+    action: function() {
+        let curLayout = _.extend(UserLayout, {
+            page: "Contact"
+        });
+        BlazeLayout.render("MainLayout", curLayout);
+    }
+});
