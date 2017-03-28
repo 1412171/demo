@@ -113,3 +113,48 @@ FlowRouter.route('/contact', {
         BlazeLayout.render("MainLayout", curLayout);
     }
 });
+FlowRouter.route('/shoppingcart', {
+    name: "ShoppingCart",
+    action: function() {
+        let curLayout = _.extend(UserLayout, {
+            page: "ShoppingCart"
+        });
+        BlazeLayout.render("MainLayout", curLayout);
+    }
+});
+FlowRouter.route('/checkout', {
+    name: "Checkout1",
+    action: function() {
+        let curLayout = _.extend(UserLayout, {
+            page: "Checkout1"
+        });
+        BlazeLayout.render("MainLayout", curLayout);
+    }
+});
+FlowRouter.route('/checkout2', {
+    name: "Checkout2",
+    action: function() {
+        let curLayout = _.extend(UserLayout, {
+            page: "Checkout2"
+        });
+        BlazeLayout.render("MainLayout", curLayout);
+    }
+});
+FlowRouter.route('/checkout3', {
+    name: "Checkout3",
+    action: function() {
+        let curLayout = _.extend(UserLayout, {
+            page: "Checkout3"
+        });
+        BlazeLayout.render("MainLayout", curLayout);
+    }
+});
+FlowRouter.route('/checkout4', {
+    name: "Checkout4",
+    action: function() {
+        let curLayout = _.extend(UserLayout, {
+            page: "Checkout4"
+        });
+        BlazeLayout.render("MainLayout", curLayout);
+    }
+});
