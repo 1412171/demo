@@ -15,18 +15,18 @@
                                     <b class="caret"></b>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="topbar-fix-dropdown" href="#">Profile</a></li>
-                                    <li><a class="topbar-fix-dropdown logout" href="#">Logout</a></li>
+                                    <li><a class="topbar-fix-dropdown" href="{{pathFor 'Account'}}">Profile</a></li>
+                                    <li><a class="topbar-fix-dropdown logout" href="/">Logout</a></li>
                                 </ul>
                             </div>
                             </li>
                         {{else}}
                             <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
-                            <li><a href="#">Register</a></li>
+                            <li><a href="{{pathFor 'Register'}}">Register</a></li>
                         {{/if}}
-                        <li><a href="#">Contact</a>
+                        <li><a href="{{pathFor 'Contact'}}">Contact</a>
                         </li>
-                        <li><a href="#">Recently viewed</a>
+                        <li><a href="/">Recently viewed</a>
                         </li>
                     </ul>
                 </div>

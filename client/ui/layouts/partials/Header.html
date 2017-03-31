@@ -17,8 +17,8 @@
                             <span class="sr-only">Toggle search</span>
                             <i class="fa fa-search"></i>
                         </button>
-                        <a class="btn btn-default navbar-toggle" href="#">
-                            <i class="fa fa-shopping-cart"></i>  <span class="hidden-xs">3 items in cart</span>
+                        <a class="btn btn-default navbar-toggle" href="{{pathFor 'ShoppingCart'}}">
+                            <i class="fa fa-shopping-cart"></i> <span class="hidden-xs">3 items in cart</span>
                         </a>
                     </div>
                 </div>
@@ -35,68 +35,52 @@
                                 <li>
                                     <div class="yamm-content">
                                         <div class="row">
-                                            <div class="col-sm-3">
+                                            <div class="col-sm-4">
                                                 <h5>Decoration</h5>
-                                                <!--<ul>
-                                                    <li><a href="#">T-shirts</a>
+                                                <ul>
+                                                    <li><a href="{{pathFor 'Detail'}}">Khung lưới</a>
                                                     </li>
-                                                    <li><a href="#">Shirts</a>
+                                                    <li><a href="{{pathFor 'Detail'}}">Kê gỗ</a>
                                                     </li>
-                                                    <li><a href="#">Pants</a>
+                                                    <li><a href="{{pathFor 'Detail'}}">Bảng treo</a>
                                                     </li>
-                                                    <li><a href="#">Accessories</a>
+                                                    <li><a href="{{pathFor 'Detail'}}">Decoration flag</a>
                                                     </li>
-                                                </ul>-->
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <h5>Lights</h5>
-                                                <!--<ul>
-                                                    <li><a href="#">Trainers</a>
-                                                    </li>
-                                                    <li><a href="#">Sandals</a>
-                                                    </li>
-                                                    <li><a href="#">Hiking shoes</a>
-                                                    </li>
-                                                    <li><a href="#">Casual</a>
-                                                    </li>
-                                                </ul>-->
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <h5>Notebooks</h5>
-                                                <!--<ul>
-                                                    <li><a href="#">Trainers</a>
-                                                    </li>
-                                                    <li><a href="#">Sandals</a>
-                                                    </li>
-                                                    <li><a href="#">Hiking shoes</a>
-                                                    </li>
-                                                    <li><a href="#">Casual</a>
-                                                    </li>
-                                                    <li><a href="#">Hiking shoes</a>
-                                                    </li>
-                                                    <li><a href="#">Casual</a>
-                                                    </li>
-                                                </ul>-->
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <h5>More</h5>
-                                                <!--<ul>
-                                                    <li><a href="#">Trainers</a>
-                                                    </li>
-                                                    <li><a href="#">Sandals</a>
-                                                    </li>
-                                                    <li><a href="#">Hiking shoes</a>
+                                                    <li><a href="{{pathFor 'Detail'}}">Kẹp gỗ</a>
                                                     </li>
                                                 </ul>
-                                                <h5>Looks and trends</h5>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <h5>Lights</h5>
                                                 <ul>
-                                                    <li><a href="#">Trainers</a>
+                                                    <li><a href="{{pathFor 'Detail'}}">Đèn ngủ</a>
                                                     </li>
-                                                    <li><a href="#">Sandals</a>
+                                                    <li><a href="{{pathFor 'Detail'}}">Đèn để bàn</a>
                                                     </li>
-                                                    <li><a href="#">Hiking shoes</a>
+                                                </ul>
+                                                <h5>Notebooks</h5>
+                                                <ul>
+                                                    <li><a href="{{pathFor 'Detail'}}">Sổ kế hoạch</a>
                                                     </li>
-                                                </ul>-->
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <h5>Stationery</h5>
+                                                <ul>
+                                                    <li><a href="{{pathFor 'Detail'}}">Hộp bút</a>
+                                                    </li>
+                                                    <li><a href="{{pathFor 'Detail'}}">Khung hình</a>
+                                                    </li>
+                                                </ul>
+                                                <h5>Sticker</h5>
+                                                <ul>
+                                                    <li><a href="{{pathFor 'Detail'}}">Hello Kitty</a>
+                                                    </li>
+                                                    <li><a href="{{pathFor 'Detail'}}">Rainbow</a>
+                                                    </li>
+                                                    <li><a href="{{pathFor 'Detail'}}">Siêu nhân Gao</a>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -229,21 +213,13 @@
                                                 </ul>
                                             </div>
                                             <div class="col-sm-3">
-                                                <h5>Pages and blog</h5>
+                                                <h5>More</h5>
                                                 <ul>
-                                                    <li><a href="blog.html">Blog listing</a>
+                                                    <li><a href="#">FAQ</a>
                                                     </li>
-                                                    <li><a href="post.html">Blog Post</a>
+                                                    <li><a href="abcdef">404 page</a>
                                                     </li>
-                                                    <li><a href="faq.html">FAQ</a>
-                                                    </li>
-                                                    <li><a href="text.html">Text page</a>
-                                                    </li>
-                                                    <li><a href="text-right.html">Text page - right sidebar</a>
-                                                    </li>
-                                                    <li><a href="404.html">404 page</a>
-                                                    </li>
-                                                    <li><a href="contact.html">Contact</a>
+                                                    <li><a href="{{pathFor 'Contact'}}">Contact</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -259,7 +235,7 @@
 
                 <div class="navbar-buttons">
                     <div class="navbar-collapse collapse right" id="basket-overview">
-                        <a href="basket.html" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span class="hidden-sm">3 items in cart</span></a>
+                        <a href="{{pathFor 'ShoppingCart'}}" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span class="hidden-sm">3 items in cart</span></a>
                     </div>
                     <!--/.nav-collapse -->
 

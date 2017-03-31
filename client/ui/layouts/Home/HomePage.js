@@ -72,143 +72,181 @@ Template.HomePage.helpers({
         return [
             {
                 Name: "DECOR",
-                Link: "#",
+                Link: "Category",
                 BgColor: 'white',
                 Top5: [
                     {
                         image: '/images/Decor/bang_2_mat.jpg',
-                        link: '#',
+                        link: 'Detail',
                     },
                     {
                         image: '/images/Decor/bang_ghim_30_40_cm.jpg',
-                        link: '#',
+                        link: 'Detail',
                     },
                     {
                         image: '/images/Decor/bang_ghim_40_60_cm.jpg',
-                        link: '#',
+                        link: 'Detail',
                     },
                     {
                         image: '/images/Decor/dinh_ghim.jpg',
-                        link: '#',
+                        link: 'Detail',
                     },
                     {
                         image: '/images/Decor/flower_flag.jpg',
-                        link: '#',
+                        link: 'Detail',
                     },
                     {
                         image: '/images/Decor/gia_treo_1.jpg',
-                        link: '#',
+                        link: 'Detail',
                     },
                     {
                         image: '/images/Decor/gia_treo_2.jpg',
-                        link: '#',
+                        link: 'Detail',
                     },
                     {
                         image: '/images/Decor/gia_treo_3.jpg',
-                        link: '#',
+                        link: 'Detail',
                     },
                     {
                         image: '/images/Decor/gia_treo_4.jpg',
-                        link: '#',
+                        link: 'Detail',
                     },
                     {
                         image: '/images/Decor/ke_go.jpg',
-                        link: '#',
+                        link: 'Detail',
                     },
                     {
                         image: '/images/Decor/kep_go.jpg',
-                        link: '#',
+                        link: 'Detail',
                     },
                     {
                         image: '/images/Decor/kep_go_6_loai.jpg',
-                        link: '#',
+                        link: 'Detail',
                     },
                     {
                         image: '/images/Decor/kep_go_cau_vong.jpg',
-                        link: '#',
+                        link: 'Detail',
                     },
                     {
                         image: '/images/Decor/khung_khong_lo.jpg',
-                        link: '#',
+                        link: 'Detail',
                     },
                     {
                         image: '/images/Decor/khung_map.jpg',
-                        link: '#',
+                        link: 'Detail',
                     },
                     {
                         image: '/images/Decor/khung_om.jpg',
-                        link: '#',
+                        link: 'Detail',
                     },
                     {
                         image: '/images/Decor/khung_to_bu.jpg',
-                        link: '#',
+                        link: 'Detail',
                     },
                     {
                         image: '/images/Decor/lucy.jpg',
-                        link: '#',
+                        link: 'Detail',
                     },
                     {
                         image: '/images/Decor/party_flag_set.jpg',
-                        link: '#',
+                        link: 'Detail',
                     },
                     {
                         image: '/images/Decor/rainy_set.jpg',
-                        link: '#',
+                        link: 'Detail',
                     },
                     {
                         image: '/images/Decor/travel_flag.jpg',
-                        link: '#',
+                        link: 'Detail',
                     }
                 ]
             },
             {
                 Name: "LIGHT",
-                Link: "#",
-                BgColor: '#efefef',
+                Link: "Category",
+                BgColor: 'Detailefefef',
                 Top5: [
                     {
                         image: '/images/Lights/ball_bling.jpg',
-                        link: '#',
+                        link: 'Detail',
                     },
                     {
                         image: '/images/Lights/bling_bling.jpg',
-                        link: '#',
+                        link: 'Detail',
                     },
                     {
                         image: '/images/Lights/chips_bling.jpg',
-                        link: '#',
+                        link: 'Detail',
                     },
                     {
                         image: '/images/Lights/letter_bling.jpg',
-                        link: '#',
+                        link: 'Detail',
                     },
                     {
                         image: '/images/Lights/star_bling.jpg',
-                        link: '#',
+                        link: 'Detail',
                     },
                     {
                         image: '/images/Lights/tiny_bling.jpg',
-                        link: '#',
+                        link: 'Detail',
                     }
                 ]
 
             },
             {
                 Name: "NOTEBOOKS",
-                Link: "#",
+                Link: "Category",
                 BgColor: 'white',
                 Top5: [
                     {
                         image: '/images/Notebooks/lucky_planer.jpg',
-                        link: '#',
+                        link: 'Detail',
                     },
                     {
                         image: '/images/Notebooks/note_for.jpg',
-                        link: '#',
+                        link: 'Detail',
                     },
                     {
                         image: '/images/Notebooks/tui_chong_tham_lucky_planer.jpg',
-                        link: '#',
+                        link: 'Detail',
+                    }
+                ]
+            },
+            {
+                Name: "STATIONERY",
+                Link: "Category",
+                BgColor: 'Detailefefef',
+                Top5: [
+                    {
+                        image: '/images/Notebooks/lucky_planer.jpg',
+                        link: 'Detail',
+                    },
+                    {
+                        image: '/images/Notebooks/note_for.jpg',
+                        link: 'Detail',
+                    },
+                    {
+                        image: '/images/Notebooks/tui_chong_tham_lucky_planer.jpg',
+                        link: 'Detail',
+                    }
+                ]
+            },
+            {
+                Name: "STICKER",
+                Link: "Category",
+                BgColor: 'white',
+                Top5: [
+                    {
+                        image: '/images/Notebooks/lucky_planer.jpg',
+                        link: 'Detail',
+                    },
+                    {
+                        image: '/images/Notebooks/note_for.jpg',
+                        link: 'Detail',
+                    },
+                    {
+                        image: '/images/Notebooks/tui_chong_tham_lucky_planer.jpg',
+                        link: 'Detail',
                     }
                 ]
             },
